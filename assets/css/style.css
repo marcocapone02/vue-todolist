@@ -5,46 +5,114 @@
 }
 
 body{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Courier New', Courier, monospaces;
+  color: white;
   background-color: navy;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
 h1{
   text-align: center;
   margin: 20px 0;
-  color: white;
+  text-transform: uppercase;
+}
+
+
+h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3{
   text-transform: uppercase;
 }
 
 #app{
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   border-radius: 5px;
   }
 
-  input{
-    height: 50px;
-    width: 200px;
-    padding: 10px;
-    font-size: 20px;
-    outline: 0;
-    border: 0;
-    border-radius: 5px;
+#add-bar{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+input{
+  height: 50px;
+  width: 400px;
+  padding: 10px;
+  margin: 0 2px;
+  font-size: 20px;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospaces;
   }
 
-  button{
-    width: 50px;
-    height: 50px;
-    border: 0;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    color: navy;
-    background-color: orange;
-  }
+button{
+  width: 50px;
+  height: 50px;
+  margin: 0 2px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospaces;
+  color: navy;
+  background-color: orange;
+}
 
-  button:active{
+button:active{
     background-color: gold;
-  }
+}
+
+.task-list{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.container-list{
+  width: 900px;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: x-large;
+  font-weight: bolder;
+  color: navy;
+  background-color: white;
+}
+
+.task{
+  margin: 10px 0;
+}
+
+#checkbox{
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  margin-left: 120px;
+}
+
+.fa-solid.fa-trash-can{
+  color: lightslategray;
+}
+
+
+.fa-solid.fa-trash-can:hover{
+  color: orange;
+}
+
+.fa-solid.fa-trash-can:active{
+  color: red;
+}
