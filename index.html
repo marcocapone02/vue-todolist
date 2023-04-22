@@ -35,13 +35,13 @@
 
         <li v-for="(list,i) in list">
 
-          <span v-if="list.done === true" class="task">{{list.text}}</span>
+          <span v-if="list.done === true" class="task-done">{{list.text}}</span>
 
           <span v-else="list.done === false" class="task"> {{list.text}}</span> 
 
           <span id="option">
             <input v-model="list.done" type="checkbox" id="checkbox">
-            <i @click="deleteTask(i)" class="fa-solid fa-trash-can"></i>
+            <i @click="deleteTask(i)" class="fa-solid fa-square-xmark"></i>
           </span> 
 
         </li>

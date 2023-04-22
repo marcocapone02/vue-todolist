@@ -93,8 +93,12 @@ button:active{
   background-color: white;
 }
 
-.task{
+.task,.task-done{
   margin: 10px 0;
+}
+
+.task-done{
+  text-decoration: line-through;
 }
 
 #checkbox{
@@ -104,15 +108,15 @@ button:active{
   margin-left: 120px;
 }
 
-.fa-solid.fa-trash-can{
+.fa-solid.fa-square-xmark{
   color: lightslategray;
 }
 
 
-.fa-solid.fa-trash-can:hover{
+.fa-solid.fa-square-xmark:hover{
   color: orange;
 }
 
-.fa-solid.fa-trash-can:active{
+.fa-solid.fa-square-xmark:active{
   color: red;
 }
